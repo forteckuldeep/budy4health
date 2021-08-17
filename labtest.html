@@ -145,6 +145,125 @@ span.text {
     padding: 50px 0;
 }
 
+/* new css 17-8-21 */
+.health_outr  .info {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.health_outr  .view_more {
+    font-size: 18px;
+    color: #378392;
+    font-weight: 500;
+    text-decoration: none;
+}
+.popular_health_checkup_section {
+    padding: 50px 0 80px;
+}
+.popular_health_checkup_section .container .row:nth-child(1) {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.popular_health_checkup_section .container .row:nth-child(1) h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card {
+    background: #fff;
+    box-shadow: 1px 1px 10px #e8e7e7;
+    border-radius: 10px;
+    padding: 20px 20px 50px 20px;
+    position: relative;
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card:after {
+    content: '1';
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    border-radius: 100px;
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.popular_health_checkup_section .container .row:nth-child(2) > div:nth-child(2) .Card:after {
+    content: '2';
+}
+.popular_health_checkup_section .container .row:nth-child(2) > div:nth-child(3) .Card:after {
+    content: '3';
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card:hover:after {
+    color: #ccc;
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card  ul{
+    list-style: none;
+    padding-left: 0;
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card .heading {
+    font-size: 25px;
+    margin: 20px 0;
+    color: #378392;
+    width: 70%;
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card > div:nth-child(2) img {
+    transform: scale(0.6);
+    margin-left: -10px;
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card > div:nth-child(2) span {
+    font-weight: 500;
+    margin-left: -5px;
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card ul li {
+    font-size: 14px;
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card .btn {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: #378392;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 25px;
+}
+
+
+
+/* media */
+
+/* new css 17-8-21 */
+@media (max-width:1024px) {
+    .popular_health_checkup_section .container .row:nth-child(2) > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 50px;
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card .heading {
+    width: 50%;
+}
+}
+
+@media (max-width:768px) {
+    .popular_health_checkup_section .container .row:nth-child(2) > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.popular_health_checkup_section .container .row:nth-child(2) .Card .heading {
+    width: 90%;
+}
+.popular_health_checkup_section {
+    padding: 10px 0 20px;
+}
+
+}
+
+
 /* media quaries for 1024px */
 @media (max-width:1024px) {
     .slick-prev {
@@ -391,6 +510,10 @@ span.text {
                 <div class="checkup">
                     <img src="images/icon1.jpg">
                    <h3>Cancer</h3>
+                   <p class="info">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                   </p>
+                   <a href="#" class="view_more">View More</a>
                 </div>
                 </div>
             </div>  
@@ -399,6 +522,10 @@ span.text {
                 <div class="checkup">
                     <img src="images/new/skin.png">
                    <h3>Skin</h3>
+                   <p class="info">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                   </p>
+                   <a href="#" class="view_more">View More</a>
                 </div>
                 </div>
             </div>   
@@ -407,6 +534,10 @@ span.text {
                 <div class="checkup">
                     <img src="images/new/liver.png">
                    <h3>Liver</h3>
+                   <p class="info">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                   </p>
+                   <a href="#" class="view_more">View More</a>
                 </div>
                 </div>
             </div>   
@@ -415,6 +546,10 @@ span.text {
                 <div class="checkup">
                     <img src="images/new/digestion.png">
                    <h3>Digestion</h3>
+                   <p class="info">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                   </p>
+                   <a href="#" class="view_more">View More</a>
                 </div>
                 </div>
             </div>   
@@ -423,6 +558,10 @@ span.text {
                 <div class="checkup">
                     <img src="images/icon1.jpg">
                    <h3>Cancer</h3>
+                   <p class="info">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                   </p>
+                   <a href="#" class="view_more">View More</a>
                 </div>
                 </div>
             </div>  
@@ -431,6 +570,10 @@ span.text {
                 <div class="checkup">
                     <img src="images/new/skin.png">
                    <h3>Skin</h3>
+                   <p class="info">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                   </p>
+                   <a href="#" class="view_more">View More</a>
                 </div>
                 </div>
             </div>   
@@ -439,6 +582,10 @@ span.text {
                 <div class="checkup">
                     <img src="images/new/liver.png">
                    <h3>Liver</h3>
+                   <p class="info">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                   </p>
+                   <a href="#" class="view_more">View More</a>
                 </div>
                 </div>
             </div>   
@@ -447,6 +594,10 @@ span.text {
                 <div class="checkup">
                     <img src="images/new/digestion.png">
                    <h3>Digestion</h3>
+                   <p class="info">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                   </p>
+                   <a href="#" class="view_more">View More</a>
                 </div>
                 </div>
             </div>    
@@ -454,6 +605,65 @@ span.text {
     </div>
     </div>
 </section>
+
+<!-- popular health checkup pakages section start -->
+<section class="popular_health_checkup_section">
+    <div class="container">
+        <div class="row">
+            <h2>Popular health checkup pakages</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="Card">
+                    <h3 class="heading">Basic Health Checkup</h3>
+                    <div>
+                        <img src="images/new/chemistry.png" alt="">
+                        <span>60 Lab Tests</span>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                    <button class="btn open_sehdule_wrapper">Book Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Card">
+                    <h3 class="heading">Full Body Health Checkup</h3>
+                    <div>
+                        <img src="images/new/chemistry.png" alt="">
+                        <span>70 Lab Tests</span>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                    <button class="btn open_sehdule_wrapper">Book Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="Card">
+                    <h3 class="heading">Advance Health Checkup</h3>
+                    <div>
+                        <img src="images/new/chemistry.png" alt="">
+                        <span>80 Lab Tests</span>
+                    </div>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                    <button class="btn open_sehdule_wrapper">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- popular health checkup pakages section end -->
+
 <section class="why_book_outr">
     <div class="container">
         <div class="row">

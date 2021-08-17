@@ -238,7 +238,114 @@ body{
 .add_to_cart_section .row > div:first-child ul li .wrapper > div:first-child p:last-child{
     font-size: 18px;
 }
+.add_to_cart_section .cart_wrapper {
+    padding: 80px 45px 70px;
+    text-align: center;
+    box-shadow: 1px 1px 10px #e8e7e7;
+    border-radius: 10px;
+}
 
+.add_to_cart_section .cart_wrapper .head img {
+    width: 35px;
+    margin-right: 20px;
+}
+.add_to_cart_section .cart_wrapper .head span {
+    font-size: 25px;
+    font-weight: 500;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:first-child {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:first-child span:nth-child(1) {
+    font-size: 18px;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:first-child span:nth-child(2) {
+    font-weight: 600;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .btn {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: #378392;
+    color: #fff;
+    padding: 10px 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 100%;
+    margin-top: 25px;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:first-child img {
+    width: 20px;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child > div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child > div span {
+    font-size: 18px;
+    font-weight: 600;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .date:after {
+    content: '';
+    width: 1px;
+    height: 15px;
+    right: 0;
+    top: 6px;
+    background: #ccc;
+    position: absolute;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .date {
+    font-weight: 600;
+    position: relative;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 1px 1px 10px #e8e7e7;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown.active {
+    overflow: visible;
+    height: 100%;
+    opacity: 1;
+}
+
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown .slick-prev:before,.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown .slick-next:before {
+    background-image: url(images/new/arrow-new.png);
+    position: absolute;
+    opacity: 1 !important;
+    background-repeat: no-repeat;
+    left: 15px;
+    top: -6px;
+    right: auto;
+    font-family: unset;
+    font-size: initial;
+    color: transparent;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown .slick-next:before{
+    left: auto;
+    right: 20px;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown .slick-prev:before {
+    transform: rotate(
+180deg
+);
+z-index: 7;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown .time_wrapper p {
+    display: inline-block;
+    margin-right: 10px;
+    border: 1px solid #378392;
+    padding: 5px;
+    border-radius: 5px;
+    min-width: 80px;
+}
 /* media quaries for 1440px */
 @media (max-width:1440px) {
     .price_comparision_section .row > div:last-child .wrapper {
@@ -250,6 +357,32 @@ body{
 .labList_banner_section .row > div:last-child img {
     min-height: 390px;
     object-fit: cover;
+}
+
+/* lablist cart page */
+.add_to_cart_section .row > div:first-child {
+    flex: 0 0 58%;
+    max-width: 58%;
+}
+.add_to_cart_section .row > div:last-child {
+    flex: 0 0 42%;
+    max-width: 42%;
+}
+
+
+}
+
+/* media quaries for 1024px */
+@media (max-width:1280px) {
+    .add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown .time_wrapper p {
+    min-width: 70px;
+    font-size: 11px;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown .slick-prev:before {
+    left: -10px;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown .slick-next:before {
+    right: 12px;
 }
 }
 
@@ -286,6 +419,11 @@ body{
 }
 .price_comparision_section .price_list .left-side > div span:last-child {
     font-size: 20px;
+}
+/* cart page  */
+.add_to_cart_section .row > div:first-child ,.add_to_cart_section .row > div:last-child {
+    flex: 0 0 100%;
+    max-width: 100%;
 }
 }
 
@@ -378,6 +516,10 @@ body{
 .price_comparision_section .price_list .left-side > div {
     margin-left: 35px;
 }
+
+
+
+
 }
 </style>
 
@@ -539,7 +681,50 @@ body{
                 </div>
                 <div class="col-md-4">
                     <div class="cart_wrapper">
-
+                        <div class="head">
+                            <img src="images/new/shopping-cart.png" alt="">
+                            <span>Test(s) Added</span>
+                        </div>
+                        <div class="cart_body">
+                            <div>
+                                <span>Vitamin B12 - Serum</span>
+                                <span>₹ 400</span>
+                                <img src="images/new/close.png" alt="">
+                            </div>
+                            <div>
+                                <div>
+                                    <span>Total</span>
+                                    <span>₹ 400</span>
+                                </div>
+                                <div class="bookNow_wrapper">
+                                    <button class="btn open_sehdule_wrapper">Book Now</button>
+                                    <div class="dropdown">
+                                        <div class="head">
+                                            <div class="date-slider">
+                                                <p class="date">17 Aug</p>
+                                                <p class="date">18 Aug</p>
+                                                <p class="date">19 Aug</p>
+                                                <p class="date">20 Aug</p>
+                                                <p class="date">21 Aug</p>
+                                                <p class="date">22 Aug</p>
+                                                <p class="date">23 Aug</p>
+                                            </div>
+                                            <div class="time_wrapper">
+                                                <p>9:00AM</p>
+                                                <p>9:30AM</p>
+                                                <p>10:00AM</p>
+                                                <p>10:00AM</p>
+                                                <p>10:30AM</p>
+                                                <p>11:00AM</p>
+                                                <p>11:30AM</p>
+                                                <p>12:00AM</p>
+                                                <p>12:30AM</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -589,10 +774,46 @@ body{
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-    <script>
-        AOS.init();
+   
+   <!-- date slider -->
+   <script>
+       $('.date-slider').slick({
+            arrows: true,
+            infinite: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true
+                }
+                },
+                {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+                },
+                {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+                }
+            ]
+        });
 
-    </script>
+        $(".open_sehdule_wrapper").click(function(){
+            $(".bookNow_wrapper .dropdown").toggleClass("active");
+        });
+   </script>
 </body>
 
 </html>
