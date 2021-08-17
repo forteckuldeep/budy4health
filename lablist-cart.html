@@ -345,6 +345,12 @@ z-index: 7;
     padding: 5px;
     border-radius: 5px;
     min-width: 80px;
+    cursor: pointer;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .dropdown .time_wrapper p.selected {
+    border-color: #3bbcd6;
+    color: white;
+    background: #3bbcd6;
 }
 /* media quaries for 1440px */
 @media (max-width:1440px) {
@@ -863,6 +869,10 @@ z-index: 7;
 
         $(".open_sehdule_wrapper").click(function(){
             $(".bookNow_wrapper .dropdown").toggleClass("active");
+        });
+
+        $(".time_wrapper p").click(function(){
+            $(this).toggleClass("selected");
         });
    </script>
 </body>
