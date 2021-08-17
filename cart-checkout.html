@@ -144,6 +144,40 @@ body{
 .cart_checkout_section .container .row > div:nth-child(2){
     margin-left: 30px;
 }
+
+/* media */
+@media (max-width:768px) {
+.cart_checkout_section .container .row > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.cart_checkout_section .container .row > div:first-child {
+    margin-bottom: 50px;
+}
+.cart_checkout_section .container .row > div:nth-child(2) {
+    margin-left: 0;
+}
+.cart_checkout_section .container .row > div:first-child .wrapper .input_group {
+    display: block;
+}
+.cart_checkout_section .container .row > div:first-child .wrapper .input_group > div:first-child {
+    margin-right: 0;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+.cart_checkout_section .container .row > div:nth-child(2) h4 {
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-align: center;
+}
+.cart_checkout_section .container .row > div:first-child .heading {
+    font-size: 30px;
+    text-align: center;
+}
+.cart_checkout_section .container .row > div:first-child .wrapper ,.cart_checkout_section .container .row > div:nth-child(2) form{
+    padding: 60px 20px;
+}
+}
 </style>
 
 </head>
@@ -260,11 +294,11 @@ body{
                                 <div class="input_group">
                                     <div>
                                         <input type="radio" id="home" name="fav_language" value="home">
-                                        <label for="home">Home Collection</label><br>
+                                        <label for="home">Lab Collection</label><br>
                                     </div>
                                     <div>
                                         <input type="radio" class="lab_collection" id="lab" name="fav_language" value="lab">
-                                        <label for="lab">Lab Collection</label><br>
+                                        <label for="lab">Home Collection</label><br>
                                     </div>
                                 </div>
                                 <div class="hide_input">

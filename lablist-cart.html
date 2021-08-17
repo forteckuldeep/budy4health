@@ -352,6 +352,16 @@ z-index: 7;
     color: white;
     background: #3bbcd6;
 }
+
+/* new */
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .date.selected {
+    color: green;
+}
+.add_to_cart_section .cart_wrapper .cart_body > div:last-child .bookNow_wrapper .bottom_btn .btn {
+    padding: 10px;
+    font-size: 16px;
+}
+
 /* media quaries for 1440px */
 @media (max-width:1440px) {
     .price_comparision_section .row > div:last-child .wrapper {
@@ -784,6 +794,9 @@ z-index: 7;
                                                 <p>12:00AM</p>
                                                 <p>12:30AM</p>
                                             </div>
+                                            <div class="bottom_btn">
+                                                <a href="#" class="btn">Conform.Sat 21 Aug,11:30 AM</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -872,8 +885,14 @@ z-index: 7;
         });
 
         $(".time_wrapper p").click(function(){
-            $(this).toggleClass("selected");
+            $('.time_wrapper p').removeClass("selected");
+            $(this).addClass("selected");
         });
+        $(".bookNow_wrapper .date").click(function(){
+            $('.bookNow_wrapper .date').removeClass("selected");
+            $(this).addClass("selected");
+        });
+        
    </script>
 </body>
 
